@@ -1,0 +1,108 @@
+@import '../../styles/_mixins.scss';
+@import '../../styles/_variables.scss';
+
+.nft-launch{
+  padding: 0;
+  .row{
+    position: relative;
+    min-height: 95vh;
+    .left-section{
+      text-align: center;
+      padding: 3em 0;
+      .title{
+        width: fit-content;
+        margin: auto;
+        max-width: 700px;
+        display: flex;
+        align-items: center;
+        .nft{
+          display: flex;
+          img{
+            max-width: 5vw;
+            margin-right: 1em;
+          }
+        }
+        .launch{
+          display: flex;
+          flex-direction: column;
+          img{
+            max-width: 18vw;
+          }
+        }
+      }
+      .bg-container {
+        margin-top: 2em;
+        background-image: url('../../assets/nft-bg.png');
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        .video-container{
+          padding: 2em;
+          .dummy-video {
+            width: 80%;
+            max-width: 700px;
+            height: 330px;
+            border-radius: 8px;
+            background-color: #000000;
+            margin: auto;
+          }
+        }
+        .details{
+          p{
+            font-size: 1.2em;
+            font-family: 'Neuton',  serif;
+          }
+        }
+      }
+    }
+    .right-section {
+      background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0, 0, 0, 0.2)), url('../../assets/nft-aside.png');
+      background-size: cover;
+      background-position: center;
+      padding: 3em 1em;
+      position: relative;
+      img{
+        max-width: 150px;
+      }
+      .qr-code{
+       position: absolute;
+       bottom: 1em;
+       left: 1em;
+      }
+    }
+  }
+  
+  
+  
+}
+
+@media(max-width:$md){
+.nft-launch{
+ .row{
+    .left-section {
+      .title {    
+          .nft {
+            img {
+              max-width: 10vw;
+              margin-right: 1em;
+            }
+          }
+          .launch {      
+            img {
+              max-width: 28vw;
+            }
+          }
+        }
+      .bg-container {
+        background-image: none;
+      }
+    }
+    .right-section {
+      min-height: 500px;
+      img {
+        max-width: 150px;
+      }
+    }
+ }
+}
+}

@@ -1,0 +1,34 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.hero {
+  padding-top: 0;
+  background-image: url('../../assets/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  .logo,.arm{
+    position: absolute;
+    left: 50%;
+  }
+  .logo{
+    width: 80%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+  }
+  .arm{
+    width: 40vw;
+    min-width: 400px;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: $sm) {
+  .hero {
+    .logo {
+      width: 70%;
+    }
+  }
+}

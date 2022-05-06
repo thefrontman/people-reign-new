@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@700&family=Poppins:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+
+// font-family: 'Poppins',sans-serif; 400,500,700 i,
+// font-family: 'Neuton', serif; 700
+
+@import './mixins';
+@import './variables';
+@import './resets';
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.align-center {
+  display: flex;
+  align-items: center;
+}
+.on-top{
+  position: relative;
+  z-index: 9;
+}

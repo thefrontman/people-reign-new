@@ -1,0 +1,79 @@
+@import '../../styles/variables';
+
+.roadmap{
+  background-color: #2e0038;
+  color: #ffffff;
+  background-image: url('../../assets/purple-bg.png');
+    background-size: cover;
+    background-position: center;
+  .bg-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .container{
+    position: relative;
+    z-index: 9;
+  }
+  .title{
+    text-align: center;
+    h3{
+      margin-top: 0;
+      font-size: 2em;
+    }
+  }
+  .roadmap-container{
+    position: relative;
+    .roadmap-element{
+      opacity: 0.6;
+      margin-top: 100px;
+      .title {
+        // max-width: 200px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.9;
+      }
+      &.active{
+        opacity: 1;
+      }
+    }
+  }
+  .roadmap-arm{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: all 1s ease;
+    z-index: 9;
+  }
+}
+
+@media(min-width:$md){
+.roadmap {
+    .roadmap-container {
+      .roadmap-element {
+        margin-top: 100px;
+        .line-container {
+          position: relative;
+          .line {
+            height: 100%;
+            width: 2px;
+            background-color: white;
+            margin: auto;
+            &::before {
+              content: '';
+              width: 2px;
+              height: 1000px;
+              background-color: white;
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

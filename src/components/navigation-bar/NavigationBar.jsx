@@ -1,0 +1,87 @@
+import React from 'react';
+import './NavigationBar.scss';
+import { Link } from 'react-scroll';
+//assets
+import logo from '../../assets/nav-logo.png';
+import hamburger from '../../assets/hamburger.png';
+import socialMedias from '../../data/socialMediaData';
+
+const centerNavs = [
+  {
+    target: 'about',
+    title: 'About us',
+    haveBar: true,
+  },
+  {
+    target: 'roadmap',
+    title: 'Roadmap',
+    haveBar: true,
+  },
+  {
+    target: 'artist',
+    title: 'Artist',
+  },
+];
+
+const NavigationBar = () => {
+  return (
+    <nav className='navbar navbar-expand-lg bg-transparent'>
+      <div className='container'>
+        <h1 className='navbar-brand'>
+          <img src={logo} alt='deployer' className='img-fluid' />
+        </h1>
+        <button
+          className='navbar-toggler'
+          type='button'
+          data-bs-toggle='collapse'
+          data-bs-target='#navbarNav'
+          aria-controls='navbarNav'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+        >
+          <img src={hamburger} alt='hamburger' className='img-fluid' />
+        </button>
+        <div className='collapse navbar-collapse' id='navbarNav'>
+          <ul className='navbar-nav mx-auto'>
+            {centerNavs.map(({ target, title, haveBar }, index) => (
+              <li className='nav-item center' key={index}>
+                <Link
+                  to={target}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className='nav-link'
+                >
+                  {title}
+                </Link>
+                {haveBar && <div className='bar'></div>}
+              </li>
+            ))}
+          </ul>
+          <ul className='navbar-nav'>
+            <li className='nav-item me-md-3 d-none d-lg-block'>
+              <button className='discord'>JOIN DISCORD</button>
+            </li>
+            <li className='nav-item social'>
+              <div className='nav-link'>
+                {socialMedias.map(({ title, logo, link }, index) => (
+                  <a
+                    href={link}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='mx-2'
+                    key={index}
+                  >
+                    <img src={logo} alt={title} className='img-fluid' />
+                  </a>
+                ))}
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default NavigationBar;

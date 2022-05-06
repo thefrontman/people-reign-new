@@ -1,0 +1,75 @@
+@import '../../styles/variables';
+
+.about{
+  background-color: #3C0C65;
+  background-image: url('../../assets/purple-bg.png');
+  background-size: cover;
+  background-position: center;
+  .bg-mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .container{
+    position: relative;
+    z-index: 9;
+  }
+  .container.top{
+    display: flex;
+    .content-container{
+      h2{
+        font-size: 3em;
+        text-align: center;
+        color: #DD00FF;
+        font-style: italic;
+        font-weight: 700;
+        margin-bottom: 50px;
+      }
+      .main-content{
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        h3{
+          color: #FF0000;
+          font-style: italic;
+          font-weight: 700;
+          margin-top: 1em;
+          margin-bottom: 1.6em;
+        }
+        p{
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .bottom-title{
+    color: #ffffff;
+    font-size: 2.7em;
+    margin-top: 2em;
+    text-align: center;
+  }
+}
+
+@media(max-width:$md){
+.about{
+  .container.top{
+    text-align: center;
+    flex-direction: column;
+    .about-img{
+      max-width: 180px;
+      margin-bottom: 1em;
+    }
+    .content-container{
+      h2{
+        font-size: 2.4em;
+      }
+      .main-content{
+        h3{
+          margin-top: 2em;
+        }
+      }
+    }
+  }
+}
+}

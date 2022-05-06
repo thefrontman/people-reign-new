@@ -1,0 +1,99 @@
+@import '../../styles/variables';
+
+.collection{
+  background-image: url('../../assets/collection-bg.png');
+  background-size: cover;
+  background-position: top;
+  .title-container{
+    h3{
+      text-align: right;
+      font-size: 2.5em;
+      margin-top: 0;
+    }
+    p{
+      max-width: 600px;
+      color: #ffffff;
+    }
+  }
+  .collection-container{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 30px;
+      .collection-item{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        text-align: center;
+        img{
+          width: 90%;
+          margin: 0 auto;
+        }
+        h4{
+          text-transform: uppercase;
+          color: #ffffff;
+          margin: 0.4em 0;
+        }
+        &:nth-last-child(1),&:nth-last-child(2),&:nth-last-child(3),&:nth-last-child(4){
+          margin-left: 4em;
+          flex-direction: column-reverse;
+        }
+      }
+  }
+}
+
+@media(max-width:$md){
+  .collection{
+    .title-container{
+      h3{
+        text-align: center;
+        font-size: 1.5em;
+      }
+    }
+    .collection-container{
+      grid-column-gap: 10px;
+      max-width: 600px;
+      .collection-item{
+        img{
+          width: 100%;
+        }
+        h4{
+          font-size: 1em;
+        }
+        &:nth-last-child(1),
+        &:nth-last-child(2),
+        &:nth-last-child(3),
+        &:nth-last-child(4) {
+          margin-left: 2em;
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media(max-width:$sm){
+  .collection{
+    .collection-container{
+      display: flex;
+      flex-direction: column;
+      .collection-item{
+        margin-top: 2em;
+        flex-direction: column-reverse;
+        &:nth-last-child(1),
+        &:nth-last-child(2),
+        &:nth-last-child(3),
+        &:nth-last-child(4) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

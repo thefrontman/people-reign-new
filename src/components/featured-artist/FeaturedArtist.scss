@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.featured-artist{
+  background-color: #000000;
+  color: #ffffff;
+  .title{
+    width: 100%;
+    max-width: 550px;
+  }
+  h3{
+    font-size: 2em;
+    margin: 0 0 0 2em;
+    margin-bottom: 3em;
+  }
+  .team-card{
+    text-align: center;
+    h4{
+      margin:1em 0 1.5em 0;
+    }
+    p{
+      text-align: left;
+    }
+  }
+}
+
+@media(max-width:$md){
+  .featured-artist{
+    .team-card{
+      max-width: 80%;
+      margin: auto;
+    }
+  }
+}

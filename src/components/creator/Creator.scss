@@ -1,0 +1,21 @@
+.creator{
+  background-color: #000000;
+  background-image: url('../../assets/creator-bg.png');
+  background-size: cover;
+  background-position: top;
+  color: #ffffff;
+  .arm {
+    max-width: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .title{
+    max-width: 300px;
+    h3{
+      text-align: right;
+      margin-top: 0;
+      font-size: 2em;
+    }
+  }
+}
