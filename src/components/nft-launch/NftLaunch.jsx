@@ -69,7 +69,13 @@ const NftLaunch = () => {
               <p>
                 Follow and Register Now <br /> To Receive Your Invitation.
               </p>
-              <button className='discord mx-auto mt-4'>JOIN DISCORD</button>
+              <a
+                href={socialMedias[0].link}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <button className='discord mx-auto mt-4'>JOIN DISCORD</button>
+              </a>
             </div>
           </div>
         </div>
