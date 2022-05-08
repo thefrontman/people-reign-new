@@ -11,7 +11,35 @@ const roadMapDetails = [
     number: '02.',
     title: (
       <h4 className='title'>
-        FIRST DROP <br /> The SILK ROAD <br /> GENESIS COLLECTION
+        FIRST DROP <br /> The SILK ROAD <br /> trading COLLECTION
+      </h4>
+    ),
+    details: (
+      <div>
+        <p>
+          The Silk Road Trading (SRT) Collection. - 888 pieces – based on the
+          eight (8), very rare and exclusive, one of one, NFTs in the Silk Road
+          Genesis Collection. Available for minting on our website.
+        </p>
+        <p>
+          Each of the 888 pieces in the SRT Collection will be released at a TBD
+          price.
+        </p>
+        <p>
+          If the Silk Road Genesis Collection becomes significant, the SRT
+          Collection should become more collectable, and the existence of 888
+          pieces, available at a much more reasonable price, will create more
+          accessible trading opportunities for the People Reign community –
+          related to the Genesis Collection.
+        </p>
+      </div>
+    ),
+  },
+  {
+    number: '03.',
+    title: (
+      <h4 className='title'>
+        SECOND DROP <br /> The SILK ROAD <br /> GENESIS COLLECTION
       </h4>
     ),
     details: (
@@ -42,34 +70,7 @@ const roadMapDetails = [
       </div>
     ),
   },
-  {
-    number: '03.',
-    title: (
-      <h4 className='title'>
-        Second DROP <br /> The SILK ROAD <br /> trading COLLECTION
-      </h4>
-    ),
-    details: (
-      <div>
-        <p>
-          The Silk Road Trading (SRT) Collection. - 888 pieces – based on the
-          eight (8), very rare and exclusive, one of one, NFTs in the Silk Road
-          Genesis Collection. Available for minting on our website.
-        </p>
-        <p>
-          Each of the 888 pieces in the SRT Collection will be released at a TBD
-          price.
-        </p>
-        <p>
-          If the Silk Road Genesis Collection becomes significant, the SRT
-          Collection should become more collectable, and the existence of 888
-          pieces, available at a much more reasonable price, will create more
-          accessible trading opportunities for the People Reign community –
-          related to the Genesis Collection.
-        </p>
-      </div>
-    ),
-  },
+
   {
     number: '04.',
     title: (

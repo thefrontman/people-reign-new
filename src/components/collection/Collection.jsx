@@ -59,14 +59,19 @@ const Collection = () => {
               data-aos='fade-right'
             />
             <h3 data-aos='fade-right' data-aos-delay='50'>
-              Trending Collection
+              Trading Collection
             </h3>
           </div>
           <div className='col-lg-6'>
             <p>
-              Introducing the artist “Billie Halliday” and “The Silk Road
-              Genesis Collection.” A collection of eight (8) one of one NFTs,
-              that memorialize the dark web phenomenon known as Silk Road.{' '}
+              Introducing the artist “Billie Halliday” and The Silk Road Trading
+              (SRT) Collection. - 888 pieces – based on the eight (8), very rare
+              and exclusive, one of one, NFTs in the Silk Road Genesis
+              Collection. Available for minting on our website on May 30th 2022.
+            </p>
+            <p>
+              Each of the 888 pieces in the SRT Collection will be released at a
+              TBD price.
             </p>
           </div>
         </div>
