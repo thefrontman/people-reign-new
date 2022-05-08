@@ -18,8 +18,8 @@
     z-index: 9;
   }
   .arm{
-    width: 40vw;
-    min-width: 400px;
+    width: 38vw;
+    min-width: 300px;
     bottom: 0;
     transform: translateX(-50%);
   }
@@ -27,6 +27,7 @@
 
 @media (max-width: $sm) {
   .hero {
+    min-height: 80vh;
     .logo {
       width: 70%;
     }
