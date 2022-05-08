@@ -38,13 +38,20 @@
         height: 100%;
         .video-container{
           padding: 2em;
-          .dummy-video {
-            width: 80%;
-            max-width: 700px;
-            height: 330px;
-            border-radius: 8px;
-            background-color: #000000;
-            margin: auto;
+          .video-wrapper{
+            position: relative;
+            .controls{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              opacity: 0;
+            }
+            &:hover {
+              .controls{
+                opacity: 1;
+              }
+            }
           }
         }
         .details{
@@ -95,6 +102,13 @@
         }
       .bg-container {
         background-image: none;
+        .video-container{
+          .video-wrapper{
+            .controls{
+              opacity: 1;
+            }
+          }
+        }
       }
     }
     .right-section {

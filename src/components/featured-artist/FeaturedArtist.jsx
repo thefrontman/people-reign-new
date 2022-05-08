@@ -34,7 +34,7 @@ const team = [
 ];
 const FeaturedArtist = () => {
   return (
-    <section className='featured-artist'>
+    <section className='featured-artist' id='artist'>
       <div className='container'>
         <img src={titleImg} alt='featured-artist' className='img-fluid title' />
         <h3>The Collection</h3>

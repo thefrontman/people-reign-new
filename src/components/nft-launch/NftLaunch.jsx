@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './NftLaunch.scss';
 import titleImg from '../../assets/nft-title.svg';
 import nftDateImg from '../../assets/nft-date.png';
@@ -9,8 +9,16 @@ import F from '../../assets/nft-f.png';
 import T from '../../assets/nft-t.png';
 import launch from '../../assets/nft-launch.png';
 import party from '../../assets/nft-party.png';
+import ReactPlayer from 'react-player';
+import video from '../../assets/video.mp4';
+import playIcon from '../../assets/play-icon.png';
+import pauseIcon from '../../assets/pause-icon.png';
 
 const NftLaunch = () => {
+  const [playing, setPlaying] = useState(false);
+  const handlePlayPause = () => {
+    setPlaying(!playing);
+  };
   return (
     <section className='container-fluid nft-launch'>
       <div className='row'>
@@ -27,8 +35,21 @@ const NftLaunch = () => {
             </div>
           </div>
           <div className='bg-container'>
-            <div className='video-container'>
-              <div className='dummy-video'></div>
+            <div className='video-container justify-center'>
+              <div className='video-wrapper'>
+                <ReactPlayer
+                  url={video}
+                  playing={playing}
+                  // controls
+                  style={{ borderRadius: '8px' }}
+                />
+                <div
+                  className={`controls ${playing ? 'playing' : 'paused'}`}
+                  onClick={handlePlayPause}
+                >
+                  <img src={playing ? pauseIcon : playIcon} alt='play' />
+                </div>
+              </div>
             </div>
             <div className='details d-md-none'>
               <p>Details Released on:</p>

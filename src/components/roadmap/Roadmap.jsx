@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Roadmap.scss';
 import titleImg from '../../assets/roadmap-title.png';
 import armImg from '../../assets/arm.png';
 import { useScrollPercentage } from 'react-scroll-percentage';
 import maskImg from '../../assets/roadmap-mask.png';
+import useWindowSize from '../../utils/useWindowSize';
 
 const roadMapDetails = [
   {
@@ -193,6 +194,18 @@ const Roadmap = () => {
   const [ref, percentage] = useScrollPercentage({
     threshold: 0,
   });
+  const [moveValue, setMoveValue] = useState('');
+  const { width } = useWindowSize();
+
+  useEffect(() => {
+    if (width < 1200) {
+      setMoveValue(Math.floor(percentage.toPrecision(2) * 270));
+    } else {
+      setMoveValue(Math.floor(percentage.toPrecision(2) * 220));
+    }
+  }, [width, percentage]);
+
+  //992
   return (
     <section className='container-fluid roadmap'>
       <img src={maskImg} alt='mask' className='bg-mask' />
@@ -213,11 +226,9 @@ const Roadmap = () => {
                 alt='arm'
                 className='img-fluid roadmap-arm d-none d-lg-block'
                 style={{
-                  transform: `translateX(-50%) translateY(${Math.floor(
-                    percentage.toPrecision(2) * 220 > 20
-                      ? Math.floor(percentage.toPrecision(2) * 220 - 20)
-                      : -1
-                  )}em)`,
+                  transform: `translateX(-50%) translateY(${
+                    moveValue > 20 ? moveValue - 20 : -1
+                  }em)`,
                 }}
               />
             </div>

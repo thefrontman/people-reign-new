@@ -60,7 +60,13 @@ const NavigationBar = () => {
           </ul>
           <ul className='navbar-nav'>
             <li className='nav-item me-md-3 d-none d-lg-block'>
-              <button className='discord'>JOIN DISCORD</button>
+              <a
+                href={socialMedias[0].link}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <button className='discord'>JOIN DISCORD</button>
+              </a>
             </li>
             <li className='nav-item social'>
               <div className='nav-link'>
