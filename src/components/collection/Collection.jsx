@@ -18,31 +18,31 @@ const collection = [
   },
   {
     img: c2,
-    name: 'mushroom',
+    name: 'cocaine',
   },
   {
     img: c7,
-    name: 'mushroom',
+    name: 'freedom of choice',
   },
   {
     img: c3,
-    name: 'mushroom',
+    name: 'deread pirate roberts',
   },
   {
     img: c8,
-    name: 'mushroom',
+    name: 'lsd',
   },
   {
     img: c4,
-    name: 'mushroom',
+    name: 'meth',
   },
   {
     img: c7,
-    name: 'mushroom',
+    name: 'heroin',
   },
   {
     img: c1,
-    name: 'mushroom',
+    name: 'morphine',
   },
 ];
 
