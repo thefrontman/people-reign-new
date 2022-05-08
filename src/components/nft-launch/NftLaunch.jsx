@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './NftLaunch.scss';
-import titleImg from '../../assets/nft-title.svg';
+// import titleImg from '../../assets/nft-title.svg';
 import nftDateImg from '../../assets/nft-date.png';
 import qrImg from '../../assets/nft-qr.png';
 import socialMedias from '../../data/socialMediaData';

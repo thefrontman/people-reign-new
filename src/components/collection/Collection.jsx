@@ -1,13 +1,13 @@
 import React from 'react';
 import './Collection.scss';
 import titleImg from '../../assets/collection-title.png';
-import collectionImg from '../../assets/collection.png';
+// import collectionImg from '../../assets/collection.png';
 import c1 from '../../assets/c1.png';
 import c2 from '../../assets/c2.png';
 import c3 from '../../assets/c3.png';
 import c4 from '../../assets/c4.png';
 import c5 from '../../assets/c5.png';
-import c6 from '../../assets/c6.png';
+// import c6 from '../../assets/c6.png';
 import c7 from '../../assets/c7.png';
 import c8 from '../../assets/c8.png';
 
