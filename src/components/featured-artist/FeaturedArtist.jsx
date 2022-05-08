@@ -36,13 +36,20 @@ const FeaturedArtist = () => {
   return (
     <section className='featured-artist' id='artist'>
       <div className='container'>
-        <img src={titleImg} alt='featured-artist' className='img-fluid title' />
-        <h3>The Collection</h3>
+        <img
+          src={titleImg}
+          alt='featured-artist'
+          className='img-fluid title'
+          data-aos='fade-right'
+        />
+        <h3 data-aos='fade-right' data-aos-delay='50'>
+          The Collection
+        </h3>
 
         <div className='row g-5 team-container'>
           {team.map(({ name, image, about }, index) => (
             <div className='col-md-3' key={index}>
-              <div className='team-card'>
+              <div className='team-card' data-aos='fade-up'>
                 <img src={image} alt={name} className='img-fluid' />
                 <h4>{name}</h4>
                 <p>{about}</p>

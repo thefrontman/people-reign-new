@@ -12,7 +12,11 @@ const Hero = () => {
         <button className='discord'>JOIN DISCORD</button>
       </div>
       <div className='container text-center'>
-        <img src={logoImg} alt='logo' className='logo' />
+        <img
+          src={logoImg}
+          alt='logo'
+          className='logo animate__animated animate__fadeIn animate__slower	3s'
+        />
         <img src={armImg} alt='arm' className='arm' />
       </div>
     </section>

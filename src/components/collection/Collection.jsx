@@ -52,8 +52,15 @@ const Collection = () => {
       <div className='container'>
         <div className='title-container row g-5'>
           <div className='col-lg-6'>
-            <img src={titleImg} alt='the silk road' className='img-fluid' />
-            <h3>Trending Collection</h3>
+            <img
+              src={titleImg}
+              alt='the silk road'
+              className='img-fluid'
+              data-aos='fade-right'
+            />
+            <h3 data-aos='fade-right' data-aos-delay='50'>
+              Trending Collection
+            </h3>
           </div>
           <div className='col-lg-6'>
             <p>
@@ -68,7 +75,7 @@ const Collection = () => {
         </div> */}
         <div className='collection-container'>
           {collection.map(({ img, name }, index) => (
-            <div className='collection-item' key={index}>
+            <div className='collection-item' key={index} data-aos='fade-up'>
               <h4>{name}</h4>
               <img src={img} alt={name} className='img-fluid' />
             </div>

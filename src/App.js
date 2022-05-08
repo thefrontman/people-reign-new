@@ -14,7 +14,7 @@ import Roadmap from './components/roadmap/Roadmap';
 const App = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1500,
+      duration: 1000,
       offset: 200,
     });
     Aos.refresh();

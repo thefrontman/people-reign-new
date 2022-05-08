@@ -211,8 +211,13 @@ const Roadmap = () => {
       <img src={maskImg} alt='mask' className='bg-mask' />
       <div className='container'>
         <div className='title'>
-          <img src={titleImg} alt='roadmap' className='img-fluid' />
-          <h3>People Reign</h3>
+          <img
+            src={titleImg}
+            alt='roadmap'
+            className='img-fluid'
+            data-aos='fade-down'
+          />
+          <h3 data-aos='fade-right'>People Reign</h3>
         </div>
         <div className='roadmap-container' ref={ref}>
           <div className='row g-md-4 g-2 roadmap-element active'>

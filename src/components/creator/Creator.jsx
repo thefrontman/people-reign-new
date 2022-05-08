@@ -12,21 +12,34 @@ const Creator = () => {
           src={armImg}
           alt='arm'
           className='img-fluid arm d-none d-md-block'
+          data-aos='fade-up'
         />
         <div className='row'>
           <div className='col-md-2'></div>
           <div className='col-12 col-md-3 mid-container'>
             <div className='title'>
-              <img src={titleImg} alt='creator' className='img-fluid' />
-              <h3>By</h3>
+              <img
+                src={titleImg}
+                alt='creator'
+                className='img-fluid'
+                data-aos='fade-up'
+              />
+              <h3 data-aos='fade-up'>By</h3>
             </div>
             <div className='text-center mb-5'>
-              <img src={creatorImg} alt='creator' className='img-fluid' />
-              <h4 className='text-uppercase mt-4'>George J. Chanos</h4>
+              <img
+                src={creatorImg}
+                alt='creator'
+                className='img-fluid'
+                data-aos='fade-in'
+              />
+              <h4 className='text-uppercase mt-4' data-aos='fade-in'>
+                George J. Chanos
+              </h4>
             </div>
           </div>
           <div className='col-12 col-md-7 d-flex align-items-end'>
-            <div className='content ps-md-5'>
+            <div className='content ps-md-5' data-aos='fade-up'>
               <p>
                 George J. Chanos, served as Nevada's 31st Attorney General. He's
                 the Chairman of Capriotti's, and Wing Zone, two of the fastest

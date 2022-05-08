@@ -25,13 +25,35 @@ const NftLaunch = () => {
         <div className='col-md-9 left-section'>
           <div className='title'>
             <div className='nft'>
-              <img src={N} alt='N' className='img-fluid' />
-              <img src={F} alt='f' className='img-fluid' />
-              <img src={T} alt='t' className='img-fluid' />
+              <img src={N} alt='N' className='img-fluid' data-aos='fade-up' />
+              <img
+                src={F}
+                alt='f'
+                className='img-fluid'
+                data-aos='fade-up'
+                data-aos-delay='50'
+              />
+              <img
+                src={T}
+                alt='t'
+                className='img-fluid'
+                data-aos='fade-up'
+                data-aos-delay='100'
+              />
             </div>
             <div className='launch'>
-              <img src={launch} alt='launch' className='img-fluid mb-3' />
-              <img src={party} alt='party' className='img-fluid' />
+              <img
+                src={launch}
+                alt='launch'
+                className='img-fluid mb-3'
+                data-aos='fade-down'
+              />
+              <img
+                src={party}
+                alt='party'
+                className='img-fluid'
+                data-aos='fade-up'
+              />
             </div>
           </div>
           <div className='bg-container'>
@@ -80,8 +102,19 @@ const NftLaunch = () => {
           </div>
         </div>
         <div className='col-md-3 right-section'>
-          <img src={nftDateImg} alt='launch date' className='img-fluid date' />
-          <img src={qrImg} alt='launch date' className='img-fluid qr-code' />
+          <img
+            src={nftDateImg}
+            alt='launch date'
+            className='img-fluid date'
+            data-aos='fade-in'
+          />
+          <img
+            src={qrImg}
+            alt='launch date'
+            className='img-fluid qr-code'
+            data-aos='fade-in'
+            data-aos-offset='50'
+          />
         </div>
       </div>
     </section>
