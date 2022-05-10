@@ -27,7 +27,7 @@ const roadMapDetails = [
         </p>
         <p>
           If the Silk Road Genesis Collection becomes significant, the SRT
-          Collection should become more collectable, and the existence of 888
+          Collection could become more collectible, and the existence of 888
           pieces, available at a much more reasonable price, will create more
           accessible trading opportunities for the People Reign community –
           related to the Genesis Collection.
@@ -89,10 +89,12 @@ const roadMapDetails = [
           These highly unique collections will break new ground in the NFT
           space, push the envelope of what’s possible, and act as a historical
           record of the world we are experiencing, as seen by the contemporary
-          artists who lived through those experiences. These unique NFTs will
-          provide a historical record of what our generation is
-          contemporaneously witnessing, minted immutably on the blockchain, for
-          future generations to enjoy, collect, and trade.
+          artists who lived through those experiences.
+        </p>
+        <p>
+          Some of these unique NFTs will provide a historical record of what our
+          generation is contemporaneously witnessing, minted immutably on the
+          blockchain, for future generations to enjoy, collect, and trade.
         </p>
         <p>
           People Reign NFTs will pioneer and showcase new opportunities to

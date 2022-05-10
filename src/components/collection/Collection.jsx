@@ -26,7 +26,7 @@ const collection = [
   },
   {
     img: c3,
-    name: 'deread pirate roberts',
+    name: 'Dread Pirates roberts',
   },
   {
     img: c8,

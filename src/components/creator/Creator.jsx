@@ -2,7 +2,7 @@ import React from 'react';
 import './Creator.scss';
 import titleImg from '../../assets/creator-title.png';
 import armImg from '../../assets/arm.png';
-import creatorImg from '../../assets/creator.png';
+import creatorImg from '../../assets/creator.jpeg';
 
 const Creator = () => {
   return (
