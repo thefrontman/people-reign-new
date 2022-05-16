@@ -7,7 +7,7 @@ import c2 from '../../assets/c2.png';
 import c3 from '../../assets/c3.png';
 import c4 from '../../assets/c4.png';
 import c5 from '../../assets/c5.png';
-// import c6 from '../../assets/c6.png';
+import c6 from '../../assets/c6.png';
 import c7 from '../../assets/c7.png';
 import c8 from '../../assets/c8.png';
 
@@ -26,7 +26,7 @@ const collection = [
   },
   {
     img: c3,
-    name: 'Dread Pirates roberts',
+    name: 'Dread Pirate roberts',
   },
   {
     img: c8,
@@ -37,7 +37,7 @@ const collection = [
     name: 'meth',
   },
   {
-    img: c7,
+    img: c6,
     name: 'heroin',
   },
   {
