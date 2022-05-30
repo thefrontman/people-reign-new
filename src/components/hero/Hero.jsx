@@ -9,8 +9,20 @@ const Hero = () => {
     <section className='container-fluid hero' id='hero'>
       <NavigationBar />
       <div className='d-lg-none hero-btn-group on-top'>
-        <button className='discord'>MINT</button>
-        <button className='discord'>JOIN DISCORD</button>
+        <a
+          href='http://mint.peoplereign.com'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <button className='discord'>MINT</button>
+        </a>
+        <a
+          href='https://discord.com/invite/peoplereign'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <button className='discord'>JOIN DISCORD</button>
+        </a>
       </div>
       <div className='container text-center'>
         <img
