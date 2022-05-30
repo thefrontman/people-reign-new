@@ -1,15 +1,11 @@
 import React, { useEffect } from 'react';
-import Hero from './components/hero/Hero';
+
 import './styles/main.scss';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import NftLaunch from './components/nft-launch/NftLaunch';
-import About from './components/about/About';
-import Collection from './components/collection/Collection';
-import FeaturedArtist from './components/featured-artist/FeaturedArtist';
-import Creator from './components/creator/Creator';
-import Footer from './components/footer/Footer';
-import Roadmap from './components/roadmap/Roadmap';
+import Home from './pages/Home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Mint from './pages/Mint';
 
 const App = () => {
   useEffect(() => {
@@ -20,19 +16,19 @@ const App = () => {
     Aos.refresh();
     document
       .querySelectorAll('img')
-      .forEach((img) => img.addEventListener('load', () => Aos.refresh()));
+      .forEach(img => img.addEventListener('load', () => Aos.refresh()));
   }, []);
   return (
-    <>
-      <Hero />
-      <NftLaunch />
-      <About />
-      <Collection />
-      <Roadmap />
-      <FeaturedArtist />
-      <Creator />
-      <Footer />
-    </>
+    <Router>
+      <Switch>
+        <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route exact path='/mint'>
+          <Mint />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 
