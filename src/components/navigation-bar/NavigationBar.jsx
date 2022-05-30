@@ -10,12 +10,10 @@ const centerNavs = [
   {
     target: 'about',
     title: 'About us',
-    haveBar: true,
   },
   {
     target: 'roadmap',
     title: 'Roadmap',
-    haveBar: true,
   },
   {
     target: 'artist',
@@ -25,7 +23,7 @@ const centerNavs = [
 
 const NavigationBar = () => {
   return (
-    <nav className='navbar navbar-expand-lg bg-transparent'>
+    <nav className='navbar navbar-expand-lg'>
       <div className='container'>
         <h1 className='navbar-brand'>
           <img src={logo} alt='deployer' className='img-fluid' />
@@ -43,7 +41,7 @@ const NavigationBar = () => {
         </button>
         <div className='collapse navbar-collapse' id='navbarNav'>
           <ul className='navbar-nav mx-auto'>
-            {centerNavs.map(({ target, title, haveBar }, index) => (
+            {centerNavs.map(({ target, title }, index) => (
               <li className='nav-item center' key={index}>
                 <Link
                   to={target}
@@ -54,9 +52,19 @@ const NavigationBar = () => {
                 >
                   {title}
                 </Link>
-                {haveBar && <div className='bar'></div>}
+                <div className='bar'></div>
               </li>
             ))}
+            <li className='nav-item center'>
+              <a
+                href='http://mint.peoplereign.com'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='nav-link'
+              >
+                Mint
+              </a>
+            </li>
           </ul>
           <ul className='navbar-nav'>
             <li className='nav-item me-md-3 d-none d-lg-block'>

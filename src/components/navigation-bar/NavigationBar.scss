@@ -3,6 +3,7 @@
 .navbar {
   z-index: 99;
   padding-top: 1em;
+  backdrop-filter: blur(5px);
   .navbar-brand {
     max-width: 200px;
   }
