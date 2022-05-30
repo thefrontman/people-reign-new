@@ -3,19 +3,16 @@ import './Hero.scss';
 import NavigationBar from '../navigation-bar/NavigationBar';
 import armImg from '../../assets/hero-arm.png';
 import logoImg from '../../assets/hero-logo.png';
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
   return (
     <section className='container-fluid hero' id='hero'>
       <NavigationBar />
       <div className='d-lg-none hero-btn-group on-top'>
-        <a
-          href='http://mint.peoplereign.com'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
+        <NavLink to='/mint'>
           <button className='discord'>MINT</button>
-        </a>
+        </NavLink>
         <a
           href='https://discord.com/invite/peoplereign'
           target='_blank'
