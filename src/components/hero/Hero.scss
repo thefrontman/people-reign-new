@@ -7,17 +7,19 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  .logo,.arm{
+  .logo,
+  .arm {
     position: absolute;
     left: 50%;
   }
-  .logo{
+  .logo {
     width: 80%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: 9;
   }
-  .arm{
+
+  .arm {
     width: 38vw;
     min-width: 320px;
     bottom: 0;
@@ -27,10 +29,21 @@
 
 @media (max-width: $sm) {
   .hero {
-    min-height: 80vh;
+    min-height: 90vh;
     .logo {
       width: 70%;
     }
-    
+    .hero-btn-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(5px);
+      button {
+        min-width: fit-content;
+        width: 200px;
+        margin-top: 1em;
+      }
+    }
   }
 }

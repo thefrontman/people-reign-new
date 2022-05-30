@@ -55,7 +55,7 @@ const NavigationBar = () => {
                 <div className='bar'></div>
               </li>
             ))}
-            <li className='nav-item center'>
+            <li className='nav-item center d-none d-lg-flex'>
               <a
                 href='http://mint.peoplereign.com'
                 target='_blank'

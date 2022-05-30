@@ -8,7 +8,8 @@ const Hero = () => {
   return (
     <section className='container-fluid hero' id='hero'>
       <NavigationBar />
-      <div className='justify-center d-lg-none mt-3 on-top'>
+      <div className='d-lg-none hero-btn-group on-top'>
+        <button className='discord'>MINT</button>
         <button className='discord'>JOIN DISCORD</button>
       </div>
       <div className='container text-center'>
