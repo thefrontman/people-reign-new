@@ -8,13 +8,13 @@ import titleImg from '../../assets/featured-artist-title.png';
 
 const team = [
   {
-    name: 'BILLY HALLIDAY',
+    name: 'BILLIE HALLIDAY',
     image: t1,
     about:
       "Similar to Banksy out of London, Billie is an unknown artist whose NFT work is a collection of political satire that documents and sheds light on what's happening in the world today – as it happens. Billie's work is provocative, cutting edge, historical and collectible.",
   },
   {
-    name: 'Garilyn Brun',
+    name: 'Garilyn BRUNE',
     image: t2,
     about:
       'A deceased Los Angeles drag queen whose images of Rush Limbaugh and Mitch McConnell will provoke thoughts and question our assumptions.',
