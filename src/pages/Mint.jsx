@@ -4,7 +4,7 @@ const Mint = () => {
   return (
     <div>
       <iframe
-        src='https://silk-road-mint.vercel.app/'
+        src='https://art-mint.netlify.app'
         title='Mint'
         style={{ width: '100%', height: '100vh' }}
       ></iframe>
